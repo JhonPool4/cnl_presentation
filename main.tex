@@ -1,0 +1,42 @@
+% !TeX spellcheck = es_PE
+% document configuration
+\include{document_configuration}
+
+% introduction parameters
+\title[Laboratorio 0]{Control no lineal}
+\subtitle{\textbf{Introducción a los módulos de control y Simulink}}
+
+\author[J. Charaja and R. Terreros (UTEC)]{\textbf {Profesora} \\ Ruth Canahuire \\ \vspace{1em} \textbf{Asistentes de enseñanza} \\ Jhon Charaja y Ricardo Terreros}
+
+\logo{\includegraphics[height=8em]{imgs/utec-logo.png}}
+
+\date{\today}
+
+
+\begin{document}
+	\frame{\titlepage}
+	\section{Introducción}
+	% hablar sobre los módulos que vamos a usar	
+	\begin{frame}
+		\frametitle{Módulos del laboratorio L414}
+		
+		\begin{minipage}[t]{0.47\textwidth}
+			\graphicspath{{imgs/qube/}}
+			\centering
+			\animategraphics[controls={play}, loop, width=\textwidth]{60}{}{10}{20} \\
+			\vspace{1em}
+			{\large \textbf{QUBE-Servo 2\footnotemark[1]}}
+		\end{minipage}
+		%\hspace{.08\textwidth}
+		\begin{minipage}[t]{0.47\textwidth}
+			\graphicspath{{imgs/inverted_pendulum/}}
+			\centering
+			\animategraphics[controls={play}, loop, width=\textwidth]{60}{}{10}{20} \\
+			\vspace{1em}
+			{\large \textbf{Inverted Pendulum\footnotemark[2]}}
+		\end{minipage}
+				
+		\footnotetext[1]{Video recuperado de \url{https://www.quanser.com/products/qube-servo-2/} }
+		\footnotetext[2]{Video recuperado de \url{https://www.quanser.com/products/qube-servo-2/} }
+	\end{frame}
+\end{document}
