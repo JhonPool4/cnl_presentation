@@ -1,0 +1,40 @@
+% document class
+\documentclass[10pt]{beamer}
+
+% presentation theme
+\usetheme{Madrid}
+
+% libraries
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc} % special symbols
+\usepackage{xcolor} % color
+\usepackage{multicol} % multiple columns
+\usepackage{multirow} % multiple rows
+\usepackage{booktabs} % beautiful tables
+\usepackage{graphicx} % figures
+\usepackage{amsmath} % math
+\usepackage{array, booktabs, tabularx}
+\usepackage{animate} % animation of images
+\usepackage{caption} % label
+\captionsetup[figure]{font=scriptsize, justification=centering} % figure configuration
+\setbeamerfont{footnote}{size=\tiny} % footnote configuration
+
+
+% my colours
+\definecolor{forestgreen}{HTML}{1d771d}
+\definecolor{darkyellow}{HTML}{DAA520}
+\definecolor{blue}{HTML}{007FFF}
+
+% to make comment
+\newcommand{\comment}[1]{}
+
+% outline configuration
+\setbeamerfont{section in toc}{size=\large}
+\setbeamerfont{subsection in toc}{size=\small}
+\setbeamertemplate{section in toc}[sections numbered]
+
+% remove buttons of Madrid theme
+\setbeamertemplate{navigation symbols}{}
+
+%\newcommand{\mcx[1]}{\multicolumn{1}{>{\centering\arraybackslash}X}{\textbf{#1}}}	
+
