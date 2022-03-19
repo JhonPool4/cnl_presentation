@@ -14,35 +14,49 @@
 
 
 \begin{document}
-	\frame{\titlepage}
-	% primer slide
-	% describir los componentes del módulo de control (QUBE-Servo 2) y cómo lo vamos a usar
-	% una foto de la placa de conexiones, una foto de cubo (enfocar conexión), una foto del péndulo y una foto del disco de masa
-	
-	% segundo slide:
-	% mostrar como conectar el módulo, imágen de las conexiones (placa -> módulo) y una imágen del cubo con el péndulo y disco de masa
-	
-	% tercer slide:
-	% indicar cúales son los bloques de Quanser para recibir data (posición) y enviar data (señal de control)
-	
-	% cuarto slide
-	% mostar el diagrama de bloques de control de posición en Simulink .
-	
-	% quinto slide
-	% controlar velocidad
-	
-	\section{Introducción}
+\frame{\titlepage}
+% primer slide
+% describir los componentes del módulo de control (QUBE-Servo 2) y cómo lo vamos a usar
+% una foto de la placa de conexiones, una foto de cubo (enfocar conexión), una foto del péndulo y una foto del disco de masa
 
-	\begin{frame}
-		\frametitle{Módulos del laboratorio L414}
-		\begin{minipage}[t]{0.47\textwidth}
-			\graphicspath{{imgs/qube/}}
-			\centering
-			\animategraphics[controls={play}, loop, width=\textwidth]{60}{}{1}{450} \\
-			\vspace{1em}
-			{\large \textbf{QUBE-Servo 2\footnotemark[1]}}
-		\end{minipage}
-				
-		\footnotetext[1]{Video recuperado de \url{https://www.quanser.com/products/qube-servo-2/} }
-	\end{frame}
+% segundo slide:
+% mostrar como conectar el módulo, imágen de las conexiones (placa -> módulo) y una imágen del cubo con el péndulo y disco de masa
+
+% tercer slide:
+% indicar cúales son los bloques de Quanser para recibir data (posición) y enviar data (señal de control)
+
+% cuarto slide
+% mostar el diagrama de bloques de control de posición en Simulink .
+
+% quinto slide
+% controlar velocidad
+
+\section{Introducción}
+
+\begin{frame}
+\frametitle{Módulos del laboratorio}
+	\graphicspath{{imgs/}}
+     \begin{figure}
+     	\subfloat[caja de control con tarjeta QFLEX 2 USB]{\includegraphics[height=0.4\textheight]{qube.jpeg}}
+     	\hfill
+      	\subfloat[módulo de péndulo invertido]{\includegraphics[height=0.4\textheight]{qube_pendulum.jpeg}} 
+      	\hfill
+      	\subfloat[módulo de carga lineal]{\includegraphics[height=0.4\textheight]{qube_disk.jpeg}}  
+     \end{figure}
+     	  
+\end{frame}
+	
+\begin{frame}
+\frametitle{Bloques de Quanser en Simulink}
+	\graphicspath{{imgs/}}
+     \begin{figure}
+     	\subfloat[módulo de control]{\includegraphics[height=0.35\textheight]{quanser_modulo.jpeg}}
+     	\hfill
+      	\subfloat[recibir posición angular del motor]{\includegraphics[height=0.35\textheight]{quanser_read.jpeg}} 
+      	\hfill
+      	\subfloat[enviar señal de control]{\includegraphics[height=0.35\textheight]{quanser_write.jpeg}}  
+     \end{figure}
+\end{frame}
+	
+
 \end{document}
