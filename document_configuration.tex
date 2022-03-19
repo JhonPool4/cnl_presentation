@@ -11,7 +11,7 @@
 \usepackage{multicol} % multiple columns
 \usepackage{multirow} % multiple rows
 \usepackage{booktabs} % beautiful tables
-\usepackage{graphicx} % figures
+\usepackage{graphicx, subfig} % figures
 \usepackage{amsmath} % math
 \usepackage{array, booktabs, tabularx}
 \usepackage{animate} % animation of images
@@ -35,6 +35,10 @@
 
 % remove buttons of Madrid theme
 \setbeamertemplate{navigation symbols}{}
+
+% to remove caption from subfloat
+\captionsetup[subfigure]{labelformat=empty}
+
 
 %\newcommand{\mcx[1]}{\multicolumn{1}{>{\centering\arraybackslash}X}{\textbf{#1}}}	
 
